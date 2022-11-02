@@ -8,8 +8,8 @@ import { fileURLToPath } from "url";
 
 import indexRouter from './routes/index.mjs';
 import usersRouter from './routes/users.mjs';
-import artworkRouter from './routes/artwork.mjs';
-import booksRouter from './routes/books.mjs';
+import skinConditionRouter from './routes/skinCondition.mjs';
+
 
 const app = express();
 
@@ -31,8 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 //path to database
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/artwork', artworkRouter);
-app.use('/books', booksRouter);
+app.use('/skinCondition', skinConditionRouter);
+
 
 
 app.set('views', path.join(__dirname, 'views'));

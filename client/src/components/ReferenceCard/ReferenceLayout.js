@@ -1,23 +1,39 @@
-import React from "react";
+import React, { useEffect, useState} from "react";
 import CardInfo from "../CardInfo";
 import "./ReferenceCard.css";
 
 const ReferenceLayout = () => {
+  const [condition, setCondition] = useState([]);
+  console.log("skincodition", condition);
+  // get skin condition data
+  const getSkinCondition = async () => {
+    const response = await fetch("http://localhost:4000/skinCondition");
+    const data = await response.json();
+    setCondition(data);
+  };
+  useEffect(() => {
+    getSkinCondition();
+  }, []);
+
+
   return (
     <div
       className="app__referencePhoto flex__center section__padding"
       id="reference"
     >
       <div className="app__referencePhoto">
+        <h1>Skin condition on black/brown skin</h1>
         <div className="app__referencePhoto flex__center">
           <div className="app__referencePhoto_items">
-            <CardInfo
-              imageUrl={
-                "https://images.unsplash.com/photo-1609542334025-778f9093a234?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
-              }
-              title={"reference.title"}
-              info={"reference.price"}
-            />
+            {condition.map((data, index) => (
+              <CardInfo key={index}
+                imageUrl={data.photo}
+                title={data.condition_name}
+                info={data.definition}
+                details={data.symptoms}
+              />
+            ))}
+           
           </div>
         </div>
       </div>

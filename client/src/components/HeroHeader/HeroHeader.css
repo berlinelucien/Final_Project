@@ -1,15 +1,16 @@
 
   .app__header-h1 {
     font-family: var(--font-base);
-    color: var(--color-golden);
-    font-weight: 700;
+    color:rgb(58, 56, 56);
+    font-weight: 800;
     letter-spacing: 0.04em;
     line-height: 117px;
     font-size: 90px;
   }
   
   .header__header-img img {
-    width: 90%;
+    width: 100%;
+   
   }
   
   @media screen and (min-width: 2000px) {
