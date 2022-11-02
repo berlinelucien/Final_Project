@@ -1,0 +1,57 @@
+
+  .app__referencePhoto {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .app__referencePhoto {
+    width: 100%;
+    margin: 2rem 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  
+  
+  .app__referencePhoto__items {
+    display: flex;
+    flex-direction: column;
+  
+    margin: 2rem 0;
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 2000px) {
+    .app__referencePhoto__items {
+      width: 650px;
+    }
+  
+    .app__referencePhoto__items {
+      height: 920px;
+    }
+  }
+  
+  @media screen and (max-width: 1150px) {
+    .app__referencePhoto__items {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .app__referencePhoto__items {
+      margin: 3rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    .app__referencePhoto__items {
+      width: 100%;
+    }
+  
+    .app__referencePhoto__items {
+      font-size: 35px;
+      line-height: 48.5px;
+    }
+  }
