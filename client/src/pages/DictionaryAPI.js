@@ -20,7 +20,7 @@ const DictionaryAPI = () => {
     const getMeaning = async () => {
         try {
             const data = await Axios.get(
-                `https://api.dictionaryapi.dev/api/v2/entries/en_US/doctor`
+                `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`
             );
             //console.log(data);
             setMeanings(data.data)
@@ -31,6 +31,8 @@ const DictionaryAPI = () => {
     console.log(meanings);
     useEffect(() => {
         getMeaning();
+ 
+    // eslint-disable-next-line 
     }, [word, category]);
   
     const PurpleSwitch = withStyles({

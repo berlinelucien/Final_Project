@@ -65,7 +65,7 @@ const NavBar = () => {
               </li>
               <li>
                 <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Contact
+                  Contact Us
                 </a>
               </li>
             </ul>
