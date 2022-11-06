@@ -6,7 +6,9 @@ function CardInfo(props) {
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src={props.imageUrl} alt={props.alt} />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+        <Card.Title>
+          <h4>Condition Name</h4>
+          {props.title}</Card.Title>
         <Card.Text>{props.info}</Card.Text>
         <Card.Text>{props.details}</Card.Text>
 
