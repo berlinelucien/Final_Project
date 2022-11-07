@@ -2,7 +2,8 @@ import React from "react";
 import "./HeroHeader.css";
 import LandingArt from "../../images/LandingArt.png";
 
-const HeroHeader = (props) => (
+const HeroHeader = () => (
+ 
   <div className="app__header app__wrapper section__padding" id="home">
     <div className="app__wrapper_info">
       {/** Hero header */}

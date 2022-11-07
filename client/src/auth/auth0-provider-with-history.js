@@ -11,7 +11,7 @@ const Auth0ProviderWithHistory = ({ children }) => {
   const navigate = useNavigate();
 
   const onRedirectCallback = (appState) => {
-    navigate.push(appState?.returnTo || window.location.pathname);
+    navigate(appState?.returnTo || window.location.pathname);
   };
 
   return (

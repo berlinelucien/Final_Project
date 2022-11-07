@@ -7,12 +7,13 @@ import Loading from "./components/Auth0/Loading";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Route, Routes, Link } from "react-router-dom";
 import ReferenceLayout from "./components/ReferenceCard/ReferenceLayout";
-import Profile from "./components/Auth0/userProfile";
-import DictionaryAPI from "./pages/DictionaryAPI";
+import Profile from "./components/Auth0/Profile";
+//import DictionaryAPI from "./pages/DictionaryAPI";
 
 const App = () => {
   const { isLoading } = useAuth0();
-  const { user } = useAuth0();
+  const { isAuthenticated, user } = useAuth0();
+  console.log("isAuthenticated", isAuthenticated);
   console.log(user)
   if (isLoading) {
     return <Loading />;
@@ -20,14 +21,15 @@ const App = () => {
 
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
-      <NavBar />
+     
       <div>
+      <NavBar />
       {!user ? <span>Welcome</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
       <Routes>
-      <Route path="/" element={<HeroHeader user={user}/>} />
+          <Route path="/" element={<HeroHeader user={ user} />} />
           <Route path="api/me" element={<Profile user={user} />} />
           </Routes>
-        <DictionaryAPI />
+    
         <ReferenceLayout />
       </div>
     </div>
