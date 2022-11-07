@@ -26,12 +26,12 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="app__navbar-login">
-        <button className="button is-primary is-dark">
+        {/* <button className="button is-primary is-dark">
          
           <a href="#login" className="p__opensans">
             Sign Up
           </a>
-        </button>
+        </button> */}
 
         <div />
         <div className="p__opensans">

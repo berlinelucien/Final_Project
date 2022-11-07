@@ -1,4 +1,4 @@
-import { createMuiTheme, TextField, ThemeProvider } from "@material-ui/core";
+import { createTheme, TextField, ThemeProvider } from "@material-ui/core";
 import React from "react";
 import MenuItem from "@material-ui/core/MenuItem/MenuItem";
 import { debounce } from "lodash";
@@ -11,7 +11,7 @@ const HeaderDict = ({
   setMeanings,
   LightTheme,
 }) => {
-  const darkTheme = createMuiTheme({
+  const darkTheme = createTheme({
     palette: {
       primary: {
         main: LightTheme ? "#000" : "#fff",
