@@ -17,8 +17,8 @@ router.get("/", async function (req, res, next) {
 router.post('/api/me', async (req, res) => {
   const newUser = {
     email: req.body.email,
-    firstname: req.body.firstname,
-    lastname: req.body.lastname,
+    firstName: req.body.firstName,
+    lastName: req.body.lastName,
     sub: req.body.sub
 
   }
@@ -28,10 +28,10 @@ router.post('/api/me', async (req, res) => {
   const valuesEmail = [newUser.email]
   const resultsEmail = await db.query(queryEmail, valuesEmail);
   if(resultsEmail.rows[0]){
-    console.log(`Thank you ${resultsEmail.rows[0].firstname} for coming back`)
+    console.log(`Thank you ${resultsEmail.rows[0].firstName} for coming back`)
   } else{
   const query = 'INSERT INTO user_accounts(email, firstname, lastname, sub) VALUES($1, $2, $3, $4) RETURNING *'
-  const values = [newUser.email, newUser.firstname, newUser.lastname, newUser.sub]
+  const values = [newUser.email, newUser.firstName, newUser.lastName, newUser.sub]
   const result = await db.query(query, values);
   console.log(result.rows[0]);
 

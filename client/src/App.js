@@ -14,22 +14,25 @@ const App = () => {
   const { isLoading } = useAuth0();
   const { isAuthenticated, user } = useAuth0();
   console.log("isAuthenticated", isAuthenticated);
-  console.log(user)
+  console.log(user);
   if (isLoading) {
     return <Loading />;
   }
 
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
-     
       <div>
-      <NavBar />
-      {!user ? <span>Welcome</span> : <span>Hello <Link to="api/me">{user.name}</Link></span> }
-      <Routes>
-          <Route path="/" element={<HeroHeader user={ user} />} />
+        <NavBar />
+        {!user ? (<h1>Welcome</h1>) : (
+          <span>
+            Hello <Link to="api/me">{user.name}</Link>
+          </span>
+        )}
+        <Routes>
+          <Route path="/" element={<HeroHeader user={user} />} />
           <Route path="api/me" element={<Profile user={user} />} />
-          </Routes>
-    
+        </Routes>
+
         <ReferenceLayout />
       </div>
     </div>
