@@ -1,13 +1,22 @@
 import express from "express";
+import db from "../db/db-connection.js"
 const router = express.Router();
 //import db from "../db/db-connection.js";
 
-
 // * get users */
-  router.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express is working' });
- });
+router.get("/", async function (req, res, next) {
+  try {
+    const user = await db.any("SELECT * FROM user_accounts", [true]);
+    res.send(user);
+  } catch (e) {
+    return res.status(400).json({ e });
+  }
+});
 
-/** POST TO USERS */
+/** post user profile */
+
+
+
+
+
 export default router;
-
