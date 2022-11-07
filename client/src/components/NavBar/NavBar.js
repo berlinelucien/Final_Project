@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import React from "react";
+import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
 
 //import { GiHamburgerMenu } from "react-icons/gi";
@@ -26,18 +27,18 @@ const NavBar = () => {
       </ul>
       <div className="app__navbar-login">
         <button className="button is-primary is-dark">
+         
           <a href="#login" className="p__opensans">
             Sign Up
           </a>
         </button>
 
         <div />
-        <button className="button is-link is-outlined">
-        <a href="/" className="p__opensans">
-          Log In
-        </a>
-        </button>
-       
+        <div className="p__opensans">
+        <AuthNav/>
+       </div>
+      
+     
       </div>
       <div className="app__navbar-smallscreen">
         {/* <GiHamburgerMenu
