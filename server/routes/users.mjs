@@ -14,9 +14,29 @@ router.get("/", async function (req, res, next) {
 });
 
 /** post user profile */
+router.post('/users', async (req, res) => {
+  const newUser = {
+    email: req.body.email,
+    firstName: req.body.given_name,
+    lastName: req.body.family_name,
+    sub: req.body.sub
 
+  }
+  console.log(newUser);
 
+  const queryEmail = 'SELECT * FROM user_accounts WHERE email=$1 LIMIT 1';
+  const valuesEmail = [newUser.email]
+  const resultsEmail = await db.query(queryEmail, valuesEmail);
+  if(resultsEmail.rows[0]){
+    console.log(`Thank you ${resultsEmail.rows[0].firstName} for coming back`)
+  } else{
+  const query = 'INSERT INTO user_accounts(email, firstname, lastname, sub) VALUES($1, $2, $3, $4) RETURNING *'
+  const values = [newUser.email, newUser.firstName, newUser.lastName, newUser.sub]
+  const result = await db.query(query, values);
+  console.log(result.rows[0]);
 
+  }
 
+});
 
 export default router;

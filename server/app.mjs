@@ -4,6 +4,10 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import cors from "cors";
+import * as dotenv from 'dotenv'
+dotenv.config()
+
+
 import { fileURLToPath } from "url";
 
 import indexRouter from './routes/index.mjs';

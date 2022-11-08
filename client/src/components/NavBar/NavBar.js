@@ -1,6 +1,9 @@
 import "./Navbar.css";
 import React from "react";
+import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
+import { Link } from "react-router-dom";
+import DictionaryAPI from "../../pages/DictionaryAPI";
 
 //import { GiHamburgerMenu } from "react-icons/gi";
 //import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -21,23 +24,21 @@ const NavBar = () => {
           <a href="#reference">Reference Picture </a>
         </li>
         <li className="p__opensans">
-          <a href="#contact">Contact Us</a>
+          <a href="#dictionary">Look up </a>
         </li>
       </ul>
       <div className="app__navbar-login">
-        <button className="button is-primary is-dark">
+        {/* <button className="button is-primary is-dark">
+         
           <a href="#login" className="p__opensans">
             Sign Up
           </a>
-        </button>
+        </button> */}
 
         <div />
-        <button className="button is-link is-outlined">
-        <a href="/" className="p__opensans">
-          Log In
-        </a>
-        </button>
-       
+        <div className="p__opensans">
+          <AuthNav />
+        </div>
       </div>
       <div className="app__navbar-smallscreen">
         {/* <GiHamburgerMenu
@@ -59,13 +60,13 @@ const NavBar = () => {
                 </a>
               </li>
               <li>
-                <a href="#about" onClick={() => setToggleMenu(false)}>
+                <a href="#reference" onClick={() => setToggleMenu(false)}>
                   Reference Picture
                 </a>
               </li>
               <li>
-                <a href="#contact" onClick={() => setToggleMenu(false)}>
-                  Contact Us
+              <a href="#dictionary" onClick={() => setToggleMenu(false)}>
+                  Look Up
                 </a>
               </li>
             </ul>
