@@ -1,10 +1,10 @@
 import React from "react";
 import Axios from "axios";
 import { useState, useEffect } from "react";
-import Definitions from "../components/Definitions";
+import Definitions from "../components/Definition/Definitions";
 import { grey } from "@material-ui/core/colors";
 import { Container, Switch, withStyles } from "@material-ui/core";
-import HeaderDict from "../components/HeaderDict";
+import HeaderDict from "../components/HeaderDictionary/HeaderDict";
 
 
 const DictionaryAPI = () => {

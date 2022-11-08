@@ -2,8 +2,7 @@ import "./Navbar.css";
 import React from "react";
 import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
-import { Link } from "react-router-dom";
-import DictionaryAPI from "../../pages/DictionaryAPI";
+
 
 //import { GiHamburgerMenu } from "react-icons/gi";
 //import { MdOutlineRestaurantMenu } from "react-icons/md";
