@@ -1,5 +1,4 @@
-import './Definition.css';
-
+import "./Definition.css";
 
 const Definitions = ({ meanings, word, LightTheme, category }) => {
   return (
@@ -16,6 +15,9 @@ const Definitions = ({ meanings, word, LightTheme, category }) => {
       )}
       {/* audio---------------------------- */}
 
+      {/** to access the definition we have to create a map to
+       * iterate thru everything to get to definition */}
+
       {word === "" ? (
         <span className="subTitle">Start by typing a word in search</span>
       ) : (
@@ -29,13 +31,16 @@ const Definitions = ({ meanings, word, LightTheme, category }) => {
                   color: LightTheme ? "white" : "black",
                 }}
               >
+                {/** ----- definition ------ */}
                 <b>{def.definition}</b>
                 <hr style={{ backgroundColor: "black", width: "100%" }} />
+                {/** ------- example ------- */}
                 {def.example && (
                   <span>
                     <b>Example :</b> {def.example}
                   </span>
                 )}
+                {/** ----- synonyms ----- */}
                 {def.synonyms && (
                   <span>
                     <b>Synonyms :</b> {def.synonyms.map((s) => `${s}, `)}

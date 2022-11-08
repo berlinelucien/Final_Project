@@ -30,7 +30,9 @@ const ReferenceLayout = () => {
       <div className="app__referencePhoto">
         <h1>Skin condition on black/brown skin</h1>
         <div className="app__referencePhoto flex__center">
-           {/** card container, material grid creates even spacing between the cards */}
+           {/** card container, material grid creates even spacing between the cards 
+            * mapping thru database for card layout
+           */}
           <div className="app__referencePhoto_items">
             <Grid container spacing={4}>
               {condition.map((data, index) => (
@@ -38,7 +40,6 @@ const ReferenceLayout = () => {
               <CardInfo key={index}
                 imageUrl={data.photo}
                 title={data.condition_name}
-                info={data.definition}
                 details={data.symptoms}
                   />
                   </Grid>

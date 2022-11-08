@@ -16,7 +16,7 @@ const DictionaryAPI = () => {
   const [LightTheme, setLightTheme] = useState(false);
 
 
-    // Function to fetch information on button
+  // Function to fetch information on button
   // click, and set the data accordingly
     const getMeaning = async () => {
         try {
@@ -35,6 +35,7 @@ const DictionaryAPI = () => {
     // eslint-disable-next-line 
     }, [word, category]);
   
+  //light mode/dark mode function
     const PurpleSwitch = withStyles({
       switchBase: {
         color: grey[50],
@@ -49,6 +50,7 @@ const DictionaryAPI = () => {
       track: {},
     })(Switch);
 
+   /** id=dictionary creates the link for the navLink */
   return (
    <div
       className="app__referencePhoto flex__center section__padding" id="dictionary"
@@ -59,6 +61,7 @@ const DictionaryAPI = () => {
         transition: "all 0.5s linear",
       }}
     >
+     { /** container for dictionary */}
       <Container
         maxWidth="md"
         style={{
@@ -76,6 +79,8 @@ const DictionaryAPI = () => {
             onChange={() => setLightTheme(!LightTheme)}
           />
         </div>
+        { /** header and definition layout , passing the data 
+         * from headerDictionary and definitions to Dictionary API */}
         <HeaderDict
           setWord={setWord}
           category={category}

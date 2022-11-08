@@ -1,3 +1,6 @@
+
+// different countries to change the language format
+
 const categories = [
     { value: "English", label: "en" },
     { value: "Hindi", label: "hi" },
@@ -13,4 +16,5 @@ const categories = [
     { value: "Turkish", label: "tr" },
   ];
   
-  export default categories;
+export default categories;
+  
