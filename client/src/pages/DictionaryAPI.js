@@ -7,6 +7,7 @@ import { Container, Switch, withStyles } from "@material-ui/core";
 import HeaderDict from "../components/HeaderDictionary/HeaderDict";
 
 
+
 const DictionaryAPI = () => {
   // Setting up the initial states
   const [word, setWord] = useState("");
@@ -20,9 +21,8 @@ const DictionaryAPI = () => {
     const getMeaning = async () => {
         try {
             const data = await Axios.get(
-                `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`
-            );
-            //console.log(data);
+              `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
+              
             setMeanings(data.data)
         } catch (error) {
             console.log(error);
