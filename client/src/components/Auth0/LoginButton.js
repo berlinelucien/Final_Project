@@ -7,10 +7,10 @@ const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
     return (
         <div className="app__navbar-login">
- <button className="button is-link is-outlined"
+ <button className="button is-primary is-light"
       onClick={() => loginWithRedirect()}>
                 
-      Log In
+      Sign Up/Log In
     </button>
         </div>
    

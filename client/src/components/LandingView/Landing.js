@@ -1,8 +1,8 @@
 import React from "react";
-import "./HeroHeader.css";
+import "./Landing.css";
 import LandingArt from "../../images/LandingArt.png";
 
-const HeroHeader = () => (
+const Landing = () => (
  
   <div className="app__header app__wrapper section__padding" id="home">
     <div className="app__wrapper_info">
@@ -19,4 +19,4 @@ const HeroHeader = () => (
   </div>
 );
 
-export default HeroHeader;
+export default Landing;

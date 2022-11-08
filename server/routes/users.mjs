@@ -14,11 +14,11 @@ router.get("/", async function (req, res, next) {
 });
 
 /** post user profile */
-router.post('/api/me', async (req, res) => {
+router.post('/users', async (req, res) => {
   const newUser = {
     email: req.body.email,
-    firstName: req.body.firstName,
-    lastName: req.body.lastName,
+    firstName: req.body.given_name,
+    lastName: req.body.family_name,
     sub: req.body.sub
 
   }
@@ -38,8 +38,5 @@ router.post('/api/me', async (req, res) => {
   }
 
 });
-
-
-
 
 export default router;

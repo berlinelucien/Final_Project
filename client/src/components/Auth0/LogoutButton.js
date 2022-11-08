@@ -8,7 +8,7 @@ const LogoutButton = () => {
     return (
       <div className='app__navbar-login'>
     <button
-      className="btn btn-danger btn-block"
+      className="button is-danger"
       onClick={() =>
         logout({
           returnTo: window.location.origin,

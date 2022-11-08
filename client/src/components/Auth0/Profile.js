@@ -20,13 +20,13 @@ const Profile = () => {
           <p className="lead text-muted">{email}</p>
         </div>
       </div>
-      <div className="row">
+      {/* <div className="row">
         <pre className="col-12 text-light bg-dark p-4">
           {JSON.stringify(user, null, 2)}
         </pre>
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default Profile;
+export default Profile

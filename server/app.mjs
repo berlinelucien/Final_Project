@@ -4,8 +4,8 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import cors from "cors";
-require('dotenv').config();
-const db = require('./db/db-connection.js');
+import * as dotenv from 'dotenv'
+dotenv.config()
 
 
 import { fileURLToPath } from "url";

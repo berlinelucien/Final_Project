@@ -1,6 +1,5 @@
 import { createTheme, TextField, ThemeProvider } from "@material-ui/core";
 import React from "react";
-import MenuItem from "@material-ui/core/MenuItem/MenuItem";
 import { debounce } from "lodash";
 
 const HeaderDict = ({
