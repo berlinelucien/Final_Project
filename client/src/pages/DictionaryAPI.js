@@ -1,10 +1,11 @@
 import React from "react";
 import Axios from "axios";
 import { useState, useEffect } from "react";
-import Definitions from "../components/Definitions";
+import Definitions from "../components/Definition/Definitions";
 import { grey } from "@material-ui/core/colors";
 import { Container, Switch, withStyles } from "@material-ui/core";
-import HeaderDict from "../components/HeaderDict";
+import HeaderDict from "../components/HeaderDictionary/HeaderDict";
+
 
 
 const DictionaryAPI = () => {
@@ -15,14 +16,13 @@ const DictionaryAPI = () => {
   const [LightTheme, setLightTheme] = useState(false);
 
 
-    // Function to fetch information on button
+  // Function to fetch information on button
   // click, and set the data accordingly
     const getMeaning = async () => {
         try {
             const data = await Axios.get(
-                `https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`
-            );
-            //console.log(data);
+              `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
+              
             setMeanings(data.data)
         } catch (error) {
             console.log(error);
@@ -35,6 +35,7 @@ const DictionaryAPI = () => {
     // eslint-disable-next-line 
     }, [word, category]);
   
+  //light mode/dark mode function
     const PurpleSwitch = withStyles({
       switchBase: {
         color: grey[50],
@@ -49,22 +50,23 @@ const DictionaryAPI = () => {
       track: {},
     })(Switch);
 
+   /** id=dictionary creates the link for the navLink */
   return (
    <div
       className="app__referencePhoto flex__center section__padding" id="dictionary"
       style={{
-        height: "100vh",
+        height: "300vh",
         backgroundColor: LightTheme ? "#fff" : "#282c34",
         color: LightTheme ? "black" : "white",
         transition: "all 0.5s linear",
       }}
     >
+     { /** container for dictionary */}
       <Container
         maxWidth="md"
         style={{
           display: "flex",
           flexDirection: "column",
-          height: "100vh",
           justifyContent: "space-evenly",
         }}
       >
@@ -77,6 +79,8 @@ const DictionaryAPI = () => {
             onChange={() => setLightTheme(!LightTheme)}
           />
         </div>
+        { /** header and definition layout , passing the data 
+         * from headerDictionary and definitions to Dictionary API */}
         <HeaderDict
           setWord={setWord}
           category={category}

@@ -2,8 +2,7 @@ import "./Navbar.css";
 import React from "react";
 import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
-import { Link } from "react-router-dom";
-import DictionaryAPI from "../../pages/DictionaryAPI";
+
 
 //import { GiHamburgerMenu } from "react-icons/gi";
 //import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -24,7 +23,7 @@ const NavBar = () => {
           <a href="#reference">Reference Picture </a>
         </li>
         <li className="p__opensans">
-          <a href="#dictionary">Look up </a>
+          <a href="#dictionary">Look Up Words </a>
         </li>
       </ul>
       <div className="app__navbar-login">
@@ -66,7 +65,7 @@ const NavBar = () => {
               </li>
               <li>
               <a href="#dictionary" onClick={() => setToggleMenu(false)}>
-                  Look Up
+                  Look Up Words
                 </a>
               </li>
             </ul>
