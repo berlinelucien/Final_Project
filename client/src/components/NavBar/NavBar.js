@@ -24,7 +24,7 @@ const NavBar = () => {
           <a href="#reference">Reference Picture </a>
         </li>
         <li className="p__opensans">
-          <a href="dictionary">Look up word </a>
+          <a href="#dictionary">Look up </a>
         </li>
       </ul>
       <div className="app__navbar-login">
@@ -65,12 +65,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="/dictionary"
-                  onClick={() => {
-                    "dictionary";
-                  }}
-                >
+              <a href="#dictionary" onClick={() => setToggleMenu(false)}>
                   Look Up
                 </a>
               </li>

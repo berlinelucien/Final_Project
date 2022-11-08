@@ -51,7 +51,7 @@ const DictionaryAPI = () => {
 
   return (
    <div
-      className="App"
+      className="app__referencePhoto flex__center section__padding" id="dictionary"
       style={{
         height: "100vh",
         backgroundColor: LightTheme ? "#fff" : "#282c34",
