@@ -23,7 +23,7 @@ const NavBar = () => {
           <a href="#reference">Reference Picture </a>
         </li>
         <li className="p__opensans">
-          <a href="#dictionary">Look up </a>
+          <a href="#dictionary">Look Up Words </a>
         </li>
       </ul>
       <div className="app__navbar-login">
@@ -65,7 +65,7 @@ const NavBar = () => {
               </li>
               <li>
               <a href="#dictionary" onClick={() => setToggleMenu(false)}>
-                  Look Up
+                  Look Up Words
                 </a>
               </li>
             </ul>

@@ -1,6 +1,9 @@
 import { createTheme, TextField, ThemeProvider } from "@material-ui/core";
 import React from "react";
+import MenuItem from "@material-ui/core/MenuItem";
+import countries from '../../data_Categories';
 import { debounce } from "lodash";
+import './Header.css'
 
 const HeaderDict = ({
   category,
@@ -31,7 +34,7 @@ const HeaderDict = ({
 
   return (
     <div className="header">
-      <span className="title">{word ? word : "Word Hunt"}</span>
+      <span className="title">{word ? word : "Look up medical words"}</span>
       <div className="inputs">
         <ThemeProvider theme={darkTheme}>
           <TextField
@@ -48,7 +51,11 @@ const HeaderDict = ({
             onChange={(e) => handleChange(e)}
             className="select"
           >
-           
+            {countries.map((option) => (
+              <MenuItem key={option.label} value={option.label}>
+                {option.value}
+              </MenuItem>
+            ))}
           </TextField>
         </ThemeProvider>
       </div>

@@ -1,3 +1,6 @@
+import './Definition.css';
+
+
 const Definitions = ({ meanings, word, LightTheme, category }) => {
   return (
     <div className="meanings">
