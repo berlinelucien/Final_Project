@@ -9,7 +9,7 @@ const ReferenceLayout = () => {
   console.log("skincodition", condition);
   // fetch skin condition data from backend server
   const getSkinCondition = async () => {
-    const response = await fetch("http://localhost:4000/skinCondition");
+    const response = await fetch("/skinCondition");
     const data = await response.json();
     setCondition(data);
   };
