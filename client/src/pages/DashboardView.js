@@ -8,8 +8,7 @@ const DashboardView = () => {
     <div>
     
       <Profile />
-      <div>
-      </div>
+     
       
     </div>
   );
