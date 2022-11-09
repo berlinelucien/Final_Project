@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "bulma/css/bulma.css";
 //import 'reactjs-popup/dist/index.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
 
 ReactDOM.render(
