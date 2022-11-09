@@ -14,15 +14,14 @@ const DictionaryAPI = () => {
   const [meanings, setMeanings] = useState([]);
   const [category, setCategory] = useState("en");
   const [LightTheme, setLightTheme] = useState(false);
-
+  //const dictionaryKey = process.env.REACT_APP_API_KEY
 
   // Function to fetch information on button
   // click, and set the data accordingly
-    const getMeaning = async () => {
+  const getMeaning = async () => {
         try {
-            const data = await Axios.get(
-              `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
-              
+          const data = await Axios.get(
+            `https://api.dictionaryapi.dev/api/v2/entries/${category}/${word}`);
             setMeanings(data.data)
         } catch (error) {
             console.log(error);
@@ -79,6 +78,7 @@ const DictionaryAPI = () => {
             onChange={() => setLightTheme(!LightTheme)}
           />
         </div>
+        
         { /** header and definition layout , passing the data 
          * from headerDictionary and definitions to Dictionary API */}
         <HeaderDict

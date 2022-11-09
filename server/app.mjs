@@ -16,12 +16,16 @@ import skinConditionRouter from './routes/skinCondition.mjs';
 
 
 const app = express();
+//create the route for the build directory using path
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+const REACT_BUILD_DIR = path.join(__dirname, '..', 'client', 'build');
 console.log("directory-name 👉️", __dirname);
 
 // view engine setup
+// tell express app that your using the reac build path
+app.use(express.static(REACT_BUILD_DIR))
 app.use(cors());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
