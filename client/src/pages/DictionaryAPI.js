@@ -26,7 +26,8 @@ const DictionaryAPI = () => {
         } catch (error) {
             console.log(error);
         }
-    };
+  };
+  
     console.log(meanings);
     useEffect(() => {
         getMeaning();
