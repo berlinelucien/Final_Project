@@ -12,6 +12,8 @@ const ReferenceLayout = () => {
   const [q, setQ] = useState("");
   const [searchParam] = useState(["condition_name"]);
 
+
+
   // search function for user be able to search for the condition name
   const searchItem = (condition) => {
     return condition.filter((data) => {
@@ -45,11 +47,12 @@ const ReferenceLayout = () => {
       {/** header title container */}
       <div className="app__referencePhoto">
         <h1>Skin condition on black/brown skin</h1>
-        <div className="search-content">
+        <div className="search_content">
           <input
+            size="50"
             className="input is-success is-rounded"
             type="text"
-            placeholder="Search"
+            placeholder="Search Condition"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
@@ -71,6 +74,7 @@ const ReferenceLayout = () => {
                       imageUrl={data.photo}
                       title={data.condition_name}
                       details={data.symptoms}
+                      
                     />
                   </Box>
                 </Grid>

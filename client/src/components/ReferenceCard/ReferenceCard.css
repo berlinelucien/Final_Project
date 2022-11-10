@@ -8,7 +8,9 @@
     flex-wrap: wrap;
   }
   
-  
+  .search_content{
+    margin-left: 55%;
+  }
   .app__referencePhoto__items {
     display: flex;
    
