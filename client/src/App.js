@@ -28,9 +28,10 @@ const App = () => {
         {!user ? <LandingView /> : <Link to="/users">{user.name}</Link>}
 
         <Routes>
+          <Route path="/users" element={<Dashboard user={user} />} />
           
-          <Route path="/users" element={<Dashboard user={user } />} />
         </Routes>
+        
 
         <ReferenceLayout />
         <DictionaryAPI />

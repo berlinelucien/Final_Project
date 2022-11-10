@@ -14,7 +14,7 @@ const DictionaryAPI = () => {
   const [meanings, setMeanings] = useState([]);
   const [category, setCategory] = useState("en");
   const [LightTheme, setLightTheme] = useState(false);
-  //const dictionaryKey = process.env.REACT_APP_API_KEY
+
 
   // Function to fetch information on button
   // click, and set the data accordingly
@@ -56,7 +56,7 @@ const DictionaryAPI = () => {
       className="app__referencePhoto flex__center section__padding" id="dictionary"
       style={{
         height: "300vh",
-        backgroundColor: LightTheme ? "#fff" : "#282c34",
+        backgroundColor: LightTheme ? "#fff" : "#808080",
         color: LightTheme ? "black" : "white",
         transition: "all 0.5s linear",
       }}

@@ -4,9 +4,6 @@ import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
 
 
-//import { GiHamburgerMenu } from "react-icons/gi";
-//import { MdOutlineRestaurantMenu } from "react-icons/md";
-
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = React.useState(false);
 
@@ -27,34 +24,17 @@ const NavBar = () => {
         </li>
       </ul>
       <div className="app__navbar-login">
-        {/* <button className="button is-primary is-dark">
-         
-          <a href="#login" className="p__opensans">
-            Sign Up
-          </a>
-        </button> */}
-
         <div />
         <div className="p__opensans">
           <AuthNav />
         </div>
       </div>
       <div className="app__navbar-smallscreen">
-        {/* <GiHamburgerMenu
-        color="#fff"
-        fontSize={27}
-        onClick={() => setToggleMenu(true)}
-      /> */}
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
-            {/* <MdOutlineRestaurantMenu
-            fontSize={27}
-            className="overlay__close"
-            onClick={() => setToggleMenu(false)}
-          /> */}
             <ul className="app__navbar-smallscreen_links">
               <li>
-                <a href="#home" onClick={() => setToggleMenu(false)}>
+              <a href="#home" onClick={() => setToggleMenu(false)}>
                   Home
                 </a>
               </li>
