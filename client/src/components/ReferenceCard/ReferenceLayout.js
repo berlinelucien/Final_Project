@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CardInfo from "../CardInfo";
+import SubHeading from "./SubHeading";
 import Grid from "@mui/material/Grid";
 import "./ReferenceCard.css";
 import Box from "@mui/material/Box";
@@ -11,8 +12,6 @@ const ReferenceLayout = () => {
 
   const [q, setQ] = useState("");
   const [searchParam] = useState(["condition_name"]);
-
-
 
   // search function for user be able to search for the condition name
   const searchItem = (condition) => {
@@ -44,9 +43,10 @@ const ReferenceLayout = () => {
       className="app__referencePhoto flex__center section__padding"
       id="reference"
     >
-      {/** header title container */}
+      {/** subheader title container, passed as a prop */}
       <div className="app__referencePhoto">
-        <h1>Skin condition on black/brown skin</h1>
+        <SubHeading title={"Reference skin condition on black/brown patients"} />
+
         <div className="search_content">
           <input
             size="50"
@@ -60,7 +60,7 @@ const ReferenceLayout = () => {
         <div className="app__referencePhoto flex__center">
           {/** card container, material grid creates even spacing between the cards
            * mapping thru database for card layout
-           * box - helps with keeping the card same format when 
+           * box - helps with keeping the card same format when
            * searching for items, so card wont collapse
            */}
 
@@ -74,7 +74,6 @@ const ReferenceLayout = () => {
                       imageUrl={data.photo}
                       title={data.condition_name}
                       details={data.symptoms}
-                      
                     />
                   </Box>
                 </Grid>
