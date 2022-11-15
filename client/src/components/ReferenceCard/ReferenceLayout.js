@@ -76,7 +76,6 @@ const ReferenceLayout = () => {
                       imageUrl={data.photo}
                       title={data.condition_name}
                       details={data.symptoms}
-                      user={data.user}
                     />
                   </Box>
                 </Grid>
