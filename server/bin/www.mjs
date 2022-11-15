@@ -3,7 +3,7 @@
 /**
  * Module dependencies.
  */
- import app from "../app.mjs";
+ import app from "../server.js";
  import debug from "debug";
  import http from "http";
 // var app = require('../app');
