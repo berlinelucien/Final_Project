@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CardInfo from "../CardInfo";
+import SubHeading from "./SubHeading";
 import Grid from "@mui/material/Grid";
 import "./ReferenceCard.css";
 import Box from "@mui/material/Box";
@@ -42,14 +43,16 @@ const ReferenceLayout = () => {
       className="app__referencePhoto flex__center section__padding"
       id="reference"
     >
-      {/** header title container */}
+      {/** subheader title container, passed as a prop */}
       <div className="app__referencePhoto">
-        <h1>Skin condition on black/brown skin</h1>
-        <div className="search-content">
+        <SubHeading title={"Reference skin condition on black/brown patients"} />
+
+        <div className="search_content">
           <input
+            size="50"
             className="input is-success is-rounded"
             type="text"
-            placeholder="Search"
+            placeholder="Search Condition"
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
@@ -57,7 +60,7 @@ const ReferenceLayout = () => {
         <div className="app__referencePhoto flex__center">
           {/** card container, material grid creates even spacing between the cards
            * mapping thru database for card layout
-           * box - helps with keeping the card same format when 
+           * box - helps with keeping the card same format when
            * searching for items, so card wont collapse
            */}
 

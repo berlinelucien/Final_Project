@@ -25,7 +25,7 @@ const App = () => {
       <NavBar />
 
       <div>
-        {!user ? <LandingView /> : <Link to="/users">{user.name}</Link>}
+        {!user ? <LandingView /> : <Dashboard/>}
 
         <Routes>
           <Route path="/users" element={<Dashboard user={user} />} />
