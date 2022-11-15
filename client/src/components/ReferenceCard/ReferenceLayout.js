@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CardInfo from "../CardInfo";
+import CardInfo from "./CardInfo";
 import SubHeading from "./SubHeading";
 import Grid from "@mui/material/Grid";
 import "./ReferenceCard.css";
@@ -45,7 +45,9 @@ const ReferenceLayout = () => {
     >
       {/** subheader title container, passed as a prop */}
       <div className="app__referencePhoto">
-        <SubHeading title={"Reference skin condition on black/brown patients"} />
+        <SubHeading
+          title={"Reference skin condition on black/brown patients"}
+        />
 
         <div className="search_content">
           <input
@@ -74,6 +76,7 @@ const ReferenceLayout = () => {
                       imageUrl={data.photo}
                       title={data.condition_name}
                       details={data.symptoms}
+                      user={data.user}
                     />
                   </Box>
                 </Grid>

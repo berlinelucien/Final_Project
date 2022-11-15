@@ -1,7 +1,7 @@
 import express from "express";
 import db from "../db/db-connection.js";
 const router = express.Router();
-//import db from "../db/db-connection.js";
+
 
 // * get users */
 router.get("/", async function (req, res, next) {
