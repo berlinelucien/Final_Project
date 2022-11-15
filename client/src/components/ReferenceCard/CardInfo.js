@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Card from "react-bootstrap/Card";
 import Typography from "@mui/material/Typography";
 
@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 
 function CardInfo(props) {
 
+  
   return (
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src={props.imageUrl} alt={props.alt} />
@@ -15,8 +16,7 @@ function CardInfo(props) {
         </Typography>
 
         <Card.Text>{props.details}</Card.Text>
-    
-
+       
       </Card.Body>
     </Card>
   );

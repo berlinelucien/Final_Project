@@ -55,7 +55,7 @@ const DictionaryAPI = () => {
    <div
       className="app__referencePhoto flex__center section__padding" id="dictionary"
       style={{
-        height: "300vh",
+        height: "100vh",
         backgroundColor: LightTheme ? "#fff" : "#808080",
         color: LightTheme ? "black" : "white",
         transition: "all 0.5s linear",

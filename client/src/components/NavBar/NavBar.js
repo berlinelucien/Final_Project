@@ -13,9 +13,7 @@ const NavBar = () => {
         <img src={image} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-        <li className="p__opensans">
-          <a href="#home">Home</a>
-        </li>
+
         <li className="p__opensans">
           <a href="#reference">Reference Picture </a>
         </li>
@@ -33,11 +31,7 @@ const NavBar = () => {
         {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <ul className="app__navbar-smallscreen_links">
-              <li>
-              <a href="#home" onClick={() => setToggleMenu(false)}>
-                  Home
-                </a>
-              </li>
+              
               <li>
                 <a href="#reference" onClick={() => setToggleMenu(false)}>
                   Reference Picture

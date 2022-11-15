@@ -4,12 +4,11 @@ import NavBar from "./components/NavBar/NavBar";
 import LandingView from "./components/LandingView/Landing";
 import "./App.css";
 import Loading from "./components/Auth0/Loading";
-import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Routes, Route } from "react-router-dom";
-import ReferenceLayout from "./components/ReferenceCard/ReferenceLayout";
+//import ReferenceLayout from "./components/ReferenceCard/ReferenceLayout";
 import Dashboard from "./pages/DashboardView";
-import DictionaryAPI from "./pages/DictionaryAPI";
+
 
 const App = () => {
   const { isLoading } = useAuth0();
@@ -28,13 +27,12 @@ const App = () => {
         {!user ? <LandingView /> : <Dashboard/>}
 
         <Routes>
+         
           <Route path="/users" element={<Dashboard user={user} />} />
           
         </Routes>
         
-
-        <ReferenceLayout />
-        <DictionaryAPI />
+       
       </div>
     </div>
   );

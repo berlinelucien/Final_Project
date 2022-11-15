@@ -1,6 +1,8 @@
 
 import React from "react";
 import Profile from "../components/Auth0/Profile";
+import ReferenceLayout from "../components/ReferenceCard/ReferenceLayout";
+import DictionaryAPI from "./DictionaryAPI";
 
 
 const DashboardView = () => {
@@ -9,7 +11,8 @@ const DashboardView = () => {
     <div>
     
       <Profile />
-   
+      <ReferenceLayout /> 
+      <DictionaryAPI />
       
     </div>
   );
