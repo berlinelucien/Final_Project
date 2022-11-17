@@ -69,8 +69,8 @@ const ReferenceLayout = () => {
           <div className="app__referencePhoto_items">
             <Grid container spacing={4}>
               {searchItem(condition).map((data, index) => (
-                <Grid item key={index} xs={12} sm={6} md={4}>
-                  <Box sx={{ width: 600, height: 450 }}>
+                <Grid item key={index} md={3}>
+                  <Box sx={{ width: 500, height: 550 }}>
                     <CardInfo
                       key={index}
                       imageUrl={data.photo}
