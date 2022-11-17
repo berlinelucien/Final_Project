@@ -18,7 +18,7 @@ Tools, languages, and others
 
 
 
-## UI BOARD
+
 ## USER FLOW/WIREFRAME
 
 ![Screen Shot 2022-11-01 at 6 11 59 PM](https://user-images.githubusercontent.com/74885072/199351785-63292981-915a-4485-9c95-e89cf41ffb5b.png)
