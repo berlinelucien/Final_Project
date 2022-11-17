@@ -9,7 +9,7 @@ const DashboardView = () => {
  
   return (
     <div>
-    
+  
       <Profile />
       <ReferenceLayout /> 
       <DictionaryAPI />
