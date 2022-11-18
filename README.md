@@ -14,7 +14,8 @@ For: Medical students/nursing students
 ## TECHSTACK
 Tools, languages, and others
 
-<img width="617" alt="Screenshot 2022-11-17 at 1 18 06 PM" src="https://user-images.githubusercontent.com/74885072/202526110-bd900b42-0819-44fd-98e4-31a3cec56678.png">
+![Screenshot 2022-11-17 at 9 24 42 PM](https://user-images.githubusercontent.com/74885072/202602432-0c1d2654-cff4-4b65-85c0-f1b5a3b2e5f9.png)
+
 
 
 
