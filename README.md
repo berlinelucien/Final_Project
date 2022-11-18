@@ -31,3 +31,33 @@ Tools, languages, and others
 ## DATA MODEL
 
 ![Screen Shot 2022-11-01 at 6 12 24 PM](https://user-images.githubusercontent.com/74885072/199351837-a17f1f41-c57f-4a90-ab05-a433bb767fad.png)
+
+
+
+## Run Locally
+
+Clone the project
+
+```
+  git clone https://github.com/berlinelucien/SkinAppeal_FinalProject
+```
+
+Go to the project directory
+
+```
+  cd SkinAppeal_FinalProject
+```
+
+Install dependencies
+
+```
+  npm install
+```
+
+Start the server
+
+```
+  npm run start
+```
+
+
