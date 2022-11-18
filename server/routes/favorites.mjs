@@ -34,4 +34,6 @@ app.delete(`/favorites/:id`, cors(), async(req,res) => {
     const savedId = req.params.id;
     await db.query('DELETE FROM favorites WHERE id=$1', [savedId]);
     res.status(200).end();
-  });
+});
+  
+export default router
