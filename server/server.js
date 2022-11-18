@@ -12,6 +12,7 @@ import { fileURLToPath } from "url";
 import indexRouter from "./routes/index.mjs";
 import usersRouter from "./routes/users.mjs";
 import skinConditionRouter from "./routes/skinCondition.mjs";
+import resourcesRouter from "./routes/resources.mjs";
 
 const app = express();
 //create the route for the build directory using path
@@ -38,6 +39,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/skinCondition", skinConditionRouter);
+app.use("/resources", resourcesRouter);
 
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
