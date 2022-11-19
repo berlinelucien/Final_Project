@@ -1,4 +1,5 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import SubHeading from "../ReferenceCard/SubHeading";
 
 const Profile = () => {
   const { user } = useAuth0();
@@ -6,22 +7,21 @@ const Profile = () => {
 
   return (
     <div className="container">
-    <div class="card">
-      <div class="card-image">
+      {/* <div class="card-image">
         <figure class="is-64x64">
           <img src={picture} alt="profile" />
         </figure>
-      </div>
+      </div> */}
       <div class="card-content">
         <div class="media">
           <div class="media-content">
+            <SubHeading title={"Welcome"} />
             <p class="title is-4">{name}</p>
-            <p class="subtitle is-6">{email}</p>
+            {/* <p class="subtitle is-6">{email}</p> */}
           </div>
         </div>
       </div>
-      </div>
-      </div>
+    </div>
   );
 };
 
