@@ -38,8 +38,10 @@ const DictionaryAPI = () => {
   //light mode/dark mode function
     const PurpleSwitch = withStyles({
       switchBase: {
+       
         color: grey[50],
         "&$checked": {
+          backgroundColor: grey[500],
           color: grey[900],
         },
         "&$checked + $track": {
@@ -53,11 +55,11 @@ const DictionaryAPI = () => {
    /** id=dictionary creates the link for the navLink */
   return (
    <div
-      className="app__referencePhoto flex__center section__padding" id="dictionary"
+      className="container_resources" id="dictionary"
       style={{
         height: "100vh",
-        backgroundColor: LightTheme ? "#fff" : "#808080",
-        color: LightTheme ? "black" : "white",
+        backgroundColor: LightTheme ? "#fff" : "transparent",
+        color: LightTheme ? "black" : "black",
         transition: "all 0.5s linear",
       }}
     >

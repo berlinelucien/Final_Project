@@ -3,7 +3,6 @@ import React from "react";
 import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
 
-
 const NavBar = () => {
   //const [toggleMenu, setToggleMenu] = React.useState(false);
 
@@ -13,9 +12,8 @@ const NavBar = () => {
         <img src={image} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-
         <li className="p__opensans">
-          <a href="/Reference">Reference Picture </a>
+          <a href="/">Reference Picture </a>
         </li>
         <li className="p__opensans">
           <a href="/DictionaryAPI">Look Up Words </a>
@@ -23,15 +21,14 @@ const NavBar = () => {
         <li className="p__opensans">
           <a href="/Resources">Resources </a>
         </li>
-        <li className="p__opensans">
+        {/* <li className="p__opensans">
           <a href="/Notes"> Notes </a>
-        </li>
+        </li> */}
       </ul>
       <div className="app__navbar-login">
+        <AuthNav />
         <div />
-        <div className="p__opensans">
-          <AuthNav />
-        </div>
+        <div className="p__opensans"></div>
       </div>
       <div className="app__navbar-smallscreen">
         {/* {toggleMenu && (

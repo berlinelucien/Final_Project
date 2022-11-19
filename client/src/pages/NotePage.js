@@ -72,7 +72,7 @@ const NotePage = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container_resources">
       <Search handleSearch={setSearchNote} />
       <NotesList
         notes={notes.filter((note) =>

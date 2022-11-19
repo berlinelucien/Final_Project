@@ -39,7 +39,7 @@ const HeaderDict = ({
     <div className="header">
       <span className="title">{word ? word : "Look up medical words"}</span>
       <div className="inputs">
-        <ThemeProvider theme={darkTheme}>
+        <ThemeProvider >
           {/** search bar for client to type in word to look up */}
           <TextField
             className="search"
