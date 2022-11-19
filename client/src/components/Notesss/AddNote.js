@@ -7,7 +7,7 @@ import "./Notes.css"
  */
 function AddNote({handleAddNote}){
     const [noteText, setNoteText] = useState('');
-    const charLimit = 300;
+    const charLimit = 500;
     const handleChange =(event)=>{
         if(charLimit - event.target.value.length >= 0){
             setNoteText(event.target.value)

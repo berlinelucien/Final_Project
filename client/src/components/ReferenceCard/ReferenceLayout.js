@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Notes from "../Notes";
 import CardInfo from "./CardInfo";
 import SubHeading from "./SubHeading";
 import Grid from "@mui/material/Grid";

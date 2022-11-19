@@ -31,7 +31,7 @@ const NotePage = () => {
 
   // eslint-disable-next-line no-lone-blocks
   {
-    /** to sotre or save the data in local storage even after closing tab */
+    /** to store or save the data in local storage even after closing tab */
   }
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem("react-notes-app-data"));
