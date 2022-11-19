@@ -17,14 +17,15 @@ Tools, languages, and others
 ![Screenshot 2022-11-17 at 9 24 42 PM](https://user-images.githubusercontent.com/74885072/202602432-0c1d2654-cff4-4b65-85c0-f1b5a3b2e5f9.png)
 
 
+## API
+
+<img width="764" alt="Screenshot 2022-11-19 at 3 21 25 PM" src="https://user-images.githubusercontent.com/74885072/202870056-4637b7b7-7eb7-4c0b-8451-eb8f54deddf1.png">
 
 
 
 ## USER FLOW/WIREFRAME
 
 ![Screen Shot 2022-11-01 at 6 11 59 PM](https://user-images.githubusercontent.com/74885072/199351785-63292981-915a-4485-9c95-e89cf41ffb5b.png)
-
-
 
 
 
