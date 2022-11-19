@@ -14,14 +14,17 @@
   
   .app__navbar-logo img {
     width: 120px;
+
   }
   
   .app__navbar-links {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     list-style: none;
+    padding-left: 25%;
+   
   }
   
   .app__navbar-links li {

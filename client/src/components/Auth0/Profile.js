@@ -1,23 +1,28 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import SubHeading from "../ReferenceCard/SubHeading";
+import NavBar from "../NavBar/NavBar";
+
 
 const Profile = () => {
   const { user } = useAuth0();
   const { name, picture, email } = user;
 
   return (
-    <div className="container">
-      {/* <div class="card-image">
-        <figure class="is-64x64">
-          <img src={picture} alt="profile" />
-        </figure>
-      </div> */}
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <SubHeading title={"Welcome"} />
-            <p class="title is-4">{name}</p>
-            {/* <p class="subtitle is-6">{email}</p> */}
+    <div>
+      <NavBar />
+      <div className="container_profile">
+        <div class="card" style={{ width: "18rem" , height:"22rem"}}>
+          <div class="media">
+            <div class="media-content">
+              <img class="card-img-top" src={picture} alt="profile" />
+              <span class="p__cormorant" style={{marginLeft:"3rem"}}>{name}</span>
+
+              {/* <p class="subtitle is-6">{email}</p> */}
+              <button class="button is-primary is-rounded are-medium">
+                {" "}
+                <a href="/Notes"> Add Notes </a>{" "}
+              </button>
+            </div>
           </div>
         </div>
       </div>

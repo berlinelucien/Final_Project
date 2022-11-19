@@ -3,35 +3,35 @@ import React from "react";
 import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
 
-
 const NavBar = () => {
-  const [toggleMenu, setToggleMenu] = React.useState(false);
+  //const [toggleMenu, setToggleMenu] = React.useState(false);
 
   return (
-    <nav className="app__navbar">
+    <nav id="navbarBasicExample" className="app__navbar">
       <div className="app__navbar-logo">
         <img src={image} alt="app__logo" />
       </div>
       <ul className="app__navbar-links">
-
         <li className="p__opensans">
-          <a href="#reference">Reference Picture </a>
+          <a href="/">Reference Picture </a>
         </li>
         <li className="p__opensans">
-          <a href="#dictionary">Look Up Words </a>
+          <a href="/DictionaryAPI">Look Up Words </a>
         </li>
         <li className="p__opensans">
-          <a href="#resources">Resources </a>
+          <a href="/Resources">Resources </a>
         </li>
+        {/* <li className="p__opensans">
+          <a href="/Notes"> Notes </a>
+        </li> */}
       </ul>
       <div className="app__navbar-login">
+        <AuthNav />
         <div />
-        <div className="p__opensans">
-          <AuthNav />
-        </div>
+        <div className="p__opensans"></div>
       </div>
       <div className="app__navbar-smallscreen">
-        {toggleMenu && (
+        {/* {toggleMenu && (
           <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
             <ul className="app__navbar-smallscreen_links">
               
@@ -52,7 +52,7 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-        )}
+        )} */}
       </div>
     </nav>
   );
