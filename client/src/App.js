@@ -24,7 +24,7 @@ const App = () => {
       
       <NavBar/>
       <div>
-        {!user ? <LandingView /> : <Dashboard/>}
+        {!user ? <LandingView /> : <Dashboard /> }
 
         <Routes>
          

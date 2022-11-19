@@ -20,6 +20,9 @@ const NavBar = () => {
         <li className="p__opensans">
           <a href="#dictionary">Look Up Words </a>
         </li>
+        <li className="p__opensans">
+          <a href="#resources">Resources </a>
+        </li>
       </ul>
       <div className="app__navbar-login">
         <div />
@@ -40,6 +43,11 @@ const NavBar = () => {
               <li>
               <a href="#dictionary" onClick={() => setToggleMenu(false)}>
                   Look Up Words
+                </a>
+              </li>
+              <li>
+                <a href="#resources" onClick={() => setToggleMenu(false)}>
+                  Resources
                 </a>
               </li>
             </ul>
