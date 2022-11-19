@@ -6,7 +6,7 @@ const Profile = () => {
   const { name, picture, email } = user;
 
   return (
-    <div className="container">
+    <div className="container_profile">
       {/* <div class="card-image">
         <figure class="is-64x64">
           <img src={picture} alt="profile" />
@@ -15,8 +15,8 @@ const Profile = () => {
       <div class="card-content">
         <div class="media">
           <div class="media-content">
-            <SubHeading title={"Welcome"} />
-            <p class="title is-4">{name}</p>
+            <SubHeading title={"Welcome,"} />
+            <p class="p__cormorant">{name}</p>
             {/* <p class="subtitle is-6">{email}</p> */}
           </div>
         </div>

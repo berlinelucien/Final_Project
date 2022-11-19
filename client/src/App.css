@@ -13,8 +13,15 @@
   justify-content: center;
   align-items: center;
 }
-
-
+.container_profile{
+  padding-left: 42%;
+}
+.container_resources{
+  display: center;
+  min-height: 40vh;
+  padding: 5%;
+ 
+}
 .app__wrapper {
   display: flex;
   justify-content: space-between;
@@ -38,7 +45,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 
@@ -65,10 +71,10 @@
 .p__opensans {
   font-family: var(--font-alt);
   color: var(--color-white);
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.04em;
   line-height: 28px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .headtext__cormorant {

@@ -11,8 +11,8 @@ const DashboardView = () => {
  
   return (
     <div>
-     
-      <Profile  />
+      <Profile />
+      
       <ReferenceLayout />
       <DictionaryAPI />
       <Resources />

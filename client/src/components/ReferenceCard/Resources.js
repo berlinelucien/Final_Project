@@ -14,17 +14,39 @@ const Resources = () => {
   }, []);
 
   return (
-    <div className="container" id="resources">
-          <SubHeading
-          title={"Resources"}
-        />
+    <div className="container_resources" id="resources">
+      <SubHeading title={"Resources"} />
+
+      <table class="table">
+        <thead className="p__opensans">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">Textbooks: </th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody className="p__opensans">
           {resources.map((data, index) => (
-              <div className="card" key={index}>
-                  {data.name}
-                  <a href={data.weblink}> Link </a>
-                  </div>
+            <tr key={index}>
+              <th scope="row"></th>
+              <td>{data.name}</td>
+              <td>
+                <button class="button is-link is-light">
+                  <a target="_blank" href={data.weblink} rel="noreferrer">
+                    {" "}
+                    Get Book{" "}
+                  </a>
+                </button>
+              </td>
+            </tr>
+
+            //   <div className="card" key={index}>
+            //       {data.name}
+            //       <a href={data.weblink}> Link </a>
+            //       </div>
           ))}
-         
+        </tbody>
+      </table>
     </div>
   );
 };

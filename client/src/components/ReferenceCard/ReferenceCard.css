@@ -9,7 +9,7 @@
   }
   
   .search_content{
-    margin-left: 55%;
+    margin-left: 53%;
   }
   .app__referencePhoto__items {
     display: flex;
@@ -39,6 +39,9 @@
     .app__referencePhoto__items {
       margin: 3rem 0;
     }
+    .search_content{
+      margin-left: 50%;
+    }
   }
   
   @media screen and (max-width: 650px) {
@@ -49,5 +52,8 @@
     .app__referencePhoto__items {
       font-size: 35px;
       line-height: 48.5px;
+    }
+    .search_content{
+      margin-left: 53%;
     }
   }
