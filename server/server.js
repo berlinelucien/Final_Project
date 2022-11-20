@@ -41,7 +41,7 @@ app.use("/users", usersRouter);
 app.use("/skinCondition", skinConditionRouter);
 app.use("/resources", resourcesRouter);
 
-app.set("views", path.join(__dirname, "views"));
+//app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
