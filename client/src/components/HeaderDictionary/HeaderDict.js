@@ -1,4 +1,4 @@
-import { createTheme, TextField, ThemeProvider } from "@material-ui/core";
+import { TextField, ThemeProvider } from "@material-ui/core";
 import React from "react";
 import MenuItem from "@material-ui/core/MenuItem";
 import countries from '../../data_Categories';
@@ -15,14 +15,7 @@ const HeaderDict = ({
   setMeanings,
   LightTheme,
 }) => {
-  const darkTheme = createTheme({
-    palette: {
-      primary: {
-        main: LightTheme ? "#000" : "#fff",
-      },
-      type: LightTheme ? "light" : "dark",
-    },
-  });
+  
 //function to handle the change when client type in a word
 // set the definition of the meaning 
     const handleChange = (e) => {
