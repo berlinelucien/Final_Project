@@ -19,7 +19,7 @@ const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const REACT_BUILD_DIR = path.join(__dirname, "..", "client", "build");
+const REACT_BUILD_DIR = path.join(__dirname, "..", "build", 'index.html');
 console.log("directory-name 👉️", __dirname);
 
 // view engine setup
@@ -33,7 +33,7 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "build")));
 
 //path to database
 app.use("/", indexRouter);
