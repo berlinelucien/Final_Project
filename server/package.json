@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently 'npm start' 'cd .. && cd client && npm start' ",
-    "start": "node ./bin/www.mjs"
+    "start": "node ./bin/www.mjs",
+    "server": "nodemon server.js"
   },
   "dependencies": {
     "concurrently": "^7.5.0",
