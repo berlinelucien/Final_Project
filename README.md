@@ -14,6 +14,8 @@ and click the signup/login button again
 
 <img width="1550" alt="Screenshot 2022-11-17 at 1 21 49 PM" src="https://user-images.githubusercontent.com/74885072/202526883-a077efd0-2a82-40a8-a4d6-62db87708459.png">
 
+## SKIN REFERENCE
+<img width="634" alt="Screenshot 2022-11-21 at 2 31 34 PM" src="https://user-images.githubusercontent.com/74885072/203142748-b319885e-a455-4e20-9ac3-d481a24fc42c.png">
 
 
 ## TECHSTACK
@@ -61,7 +63,7 @@ Install dependencies
   npm install
 ```
 
-Start the server
+Start the server && client 
 
 ```
   npm run start
