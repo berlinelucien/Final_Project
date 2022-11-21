@@ -1,7 +1,7 @@
 import { useAuth0 } from "@auth0/auth0-react";
 
 import NavBar from "../NavBar/NavBar";
-
+import {Link} from "react-router-dom";
 
 const Profile = () => {
   const { user } = useAuth0();
@@ -20,7 +20,7 @@ const Profile = () => {
               {/* <p class="subtitle is-6">{email}</p> */}
               <button class="button is-primary is-rounded are-medium">
                 {" "}
-                <a href="/Notes"> Add Notes </a>{" "}
+                <Link to="/Notes"> Add Notes </Link>{" "}
               </button>
             </div>
           </div>
