@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 
 const Profile = () => {
   const { user } = useAuth0();
-  const { name, picture } = user;
+  const { name, picture, email } = user;
 
   return (
     <div>
