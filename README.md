@@ -8,7 +8,7 @@ For: Medical students/nursing students
 HOW TO LOGIN: 
 You can sign up normally, if not possible then use 
 Test12@yahoo.com, password: Skincare1234 
-and click the signup/login button again
+
 
 ## LANDING PAGE
 
