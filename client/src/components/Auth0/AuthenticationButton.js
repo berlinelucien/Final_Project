@@ -5,7 +5,7 @@ import LogoutButton from './LogoutButton';
 import { useAuth0 } from '@auth0/auth0-react';
 
 const saveUser = (user) => {
-    return fetch("http://localhost:4000/users", {
+    return fetch("/users", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(user),
