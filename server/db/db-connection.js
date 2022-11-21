@@ -4,7 +4,7 @@ import pgPromise from 'pg-promise';
 // Create Database Connection
 const pgp = pgPromise({});
 
-const db = pgp('postgres://localhost:5432/skinapp');
+const db = pgp(process.env.DATABASE_URL);
 
 //import pg from pg
 //const { Pool } = require('pg');
