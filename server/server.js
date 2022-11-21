@@ -19,7 +19,7 @@ const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const REACT_BUILD_DIR = path.join(__dirname, "..", "build", 'index.html');
+const REACT_BUILD_DIR = path.join(__dirname, "..", "client", "build");
 console.log("directory-name 👉️", __dirname);
 
 // view engine setup

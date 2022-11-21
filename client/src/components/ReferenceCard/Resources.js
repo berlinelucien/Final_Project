@@ -5,7 +5,7 @@ const Resources = () => {
   const [resources, setResources] = useState([]);
 
   const getResource = async () => {
-    const response = await fetch("http://localhost:4000/resources");
+    const response = await fetch("/resources");
     const data = await response.json();
     setResources(data);
   };
