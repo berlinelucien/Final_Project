@@ -5,6 +5,11 @@ Skin Appeal is a tool to help nursing and medical students be able to identify a
 Addressing the lack of reference photos of dermatological conditions on skin of color.
 For: Medical students/nursing students 
 
+HOW TO LOGIN: 
+You can sign up normally, if not possible then use 
+Test12@yahoo.com, password: Skincare1234 
+and click the signup/login button again
+
 ## LANDING PAGE
 
 <img width="1550" alt="Screenshot 2022-11-17 at 1 21 49 PM" src="https://user-images.githubusercontent.com/74885072/202526883-a077efd0-2a82-40a8-a4d6-62db87708459.png">
