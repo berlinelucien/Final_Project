@@ -16,6 +16,7 @@ const ReferenceLayout = () => {
   // search function for user be able to search for the condition name
   const searchItem = (condition) => {
     return condition.filter((data) => {
+      //console.log(condition)
       return searchParam.some((newCondition) => {
         return (
           data[newCondition].toString().toLowerCase().indexOf(q.toLowerCase()) >
