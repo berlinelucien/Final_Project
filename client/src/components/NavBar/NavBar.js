@@ -2,6 +2,7 @@ import "./Navbar.css";
 import React from "react";
 import AuthNav from "../Auth0/auth-nav";
 import image from "../../images/logo3.png";
+import {Link} from "react-router-dom";
 
 const NavBar = () => {
   //const [toggleMenu, setToggleMenu] = React.useState(false);
@@ -13,13 +14,13 @@ const NavBar = () => {
       </div>
       <ul className="app__navbar-links">
         <li className="p__opensans">
-          <a href="/">Reference Picture </a>
+          <Link to="/">Reference Picture </Link>
         </li>
         <li className="p__opensans">
-          <a href="/DictionaryAPI">Look Up Words </a>
+          <Link to="/DictionaryAPI">Look Up Words </Link>
         </li>
         <li className="p__opensans">
-          <a href="/Resources">Resources </a>
+          <Link to="/Resources">Resources </Link>
         </li>
         {/* <li className="p__opensans">
           <a href="/Notes"> Notes </a>
