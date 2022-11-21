@@ -5,7 +5,7 @@ services:
     env: node
     repo: https://github.com/berlinelucien/SkinAppeal_FinalProject
     buildCommand: cd client && npm install && npm run build && cd ../server && npm install
-    startCommand: cd server && node server.js
+    startCommand: cd server && npm run dev
     envVars:
       - key: DATABASE_URL
         fromDatabase:
