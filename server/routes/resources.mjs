@@ -1,7 +1,6 @@
 import express from "express";
-import db from "../db/db-connection.js";
+import db from "../db/db-connection.mjs";
 const router = express.Router();
-
 
 // * get resources */
 router.get("/", async function (req, res, next) {
@@ -12,6 +11,5 @@ router.get("/", async function (req, res, next) {
     return res.status(400).json({ e });
   }
 });
-
 
 export default router;

@@ -1,7 +1,6 @@
 import express from "express";
-import db from "../db/db-connection.js";
+import db from "../db/db-connection.mjs";
 const router = express.Router();
-
 
 // * get users */
 router.get("/", async function (req, res, next) {
@@ -37,6 +36,5 @@ router.post("", async (req, res) => {
     console.log(result);
   }
 });
-
 
 export default router;

@@ -1,6 +1,6 @@
 import express from "express";
 const router = express.Router();
-import db from "../db/db-connection.js";
+import db from "../db/db-connection.mjs";
 
 /* GET skin condition information. */
 // server/routes/skinCondition.mjs`
@@ -12,7 +12,6 @@ router.get("/", async function (req, res, next) {
     return res.status(400).json({ e });
   }
 });
-
 
 //A put request - Update user notes
 // app.put('', cors(), async (req, res) =>{
